@@ -58,5 +58,5 @@ import { IOptions } from "https://deno.land/x/denovamon/mod.ts";
 * stdout `string` : subprocess, [see Deno.run() Docs](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.run)
 * stderr `string` : subprocess, [see Deno.run() Docs](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.run)
 
-### Thanks To
+## Thanks To
 Thank you for [rhinoder](https://deno.land/x/rhinoder) for his inspiration.
