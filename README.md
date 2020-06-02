@@ -24,6 +24,10 @@ if you using windows, you must add option "--os=win"
 ```
 deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --clear-on-restart --os=win
 ```
+Check version
+```
+deno run -A https://deno.land/x/denovamon/run.ts version
+```
 ## Programming Use
 ```
 import { Denovamon, IOptions } from "https://deno.land/x/denovamon/mod.ts";
