@@ -7,6 +7,6 @@ let options: IOptions = {
     ignore: ['test.ts']
 };
 
-let wathcer = new Denovamon(options);
+let watcher = new Denovamon(options);
 
-await wathcer.run();
+await watcher.run();

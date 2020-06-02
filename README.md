@@ -35,9 +35,9 @@ let options: IOptions = {
     ignore: ['tes.ts']
 };
 
-let wathcer = new Denovamon(options);
+let watcher = new Denovamon(options);
 
-await wathcer.run();
+await watcher.run();
 ```
 and then run denovamon with :
 ```
