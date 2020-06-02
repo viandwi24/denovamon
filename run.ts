@@ -33,3 +33,4 @@ function getValue(key: string, ifnull: any) {
 function parseArray(str: string|null) {
     return (str == null) ? [] : str.split(",");
 }
+    
