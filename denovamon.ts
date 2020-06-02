@@ -58,6 +58,7 @@ export class Denovamon {
     public async run() {
         this.log("A Module for watcher Every File Changes.");
         this.log(`Watching start in : ${this.path}`);
+        if (this.ignore.length > 0) this.log(`Ignored for : ${this.ignore.join(" | ")}`);
         await this.startProcess();
         await this.watching();
     }

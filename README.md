@@ -1,11 +1,29 @@
 # Denovamon
 a Watcher for all changes that occur in your deno project. 
-A Module for detech any change file and automatically restart your server. Inspirated by Nodemon.
+a Module to detect any change files and automatically restart your server. Inspired by Nodemon.
 Denovamon will automatically reload every time an access event occurs such as modification, delete, and a new file or folder.
 
-| inpirate by https://deno.land/x/rhinoder and https://nodemon.io/
+| inpirate by https://nodemon.io/
 
-## How to use
+
+## Simple Use
+for fast run, you can use this command
+```
+deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run --allow-net app.ts"
+```
+Ignore with regex patern  (multiple separate by coma):
+```
+deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --ignore="tes.ts,app.ts"
+```
+Clear Terminal On Restart Command :
+```
+deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --clear-on-restart
+```
+if you using windows, you must add option "--os=win"
+```
+deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --clear-on-restart --os=win
+```
+## Programming Use
 ```
 import { Denovamon, IOptions } from "https://deno.land/x/denovamon/mod.ts";
 
