@@ -1,3 +1,3 @@
 // Copyright 2020 the Denovamon authors. All rights reserved. MIT license.
-export * from "./denovamon.ts";
-export const version = "0.1.1";
+export * from "./src/denovamon.ts";
+export const version = "0.1.2";
