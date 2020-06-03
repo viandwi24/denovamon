@@ -6,27 +6,35 @@ Denovamon will automatically reload every time an access event occurs such as mo
 | inpirate by https://nodemon.io/
 
 
-## Simple Use
+## Simple Use with Executable File
+install denovamon :
+```
+deno install --allow-all https://deno.land/x/denovamon/denovamon.ts
+```
+and the,simple. Call in your terminal :
+```
+denovamon start --command="deno run --allow-net myapp.ts"
+```
+## Simple Use with Online File
 for fast run, you can use this command
 ```
-deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run --allow-net app.ts"
-deno run -A https://raw.githubusercontent.com/viandwi24/denovamon/master/run.ts start --command="deno run --allow-net app.ts"
+deno run -A https://deno.land/x/denovamon/denovamon.ts start --command="deno run --allow-net app.ts"
 ```
 Ignore with regex patern  (multiple separate by coma):
 ```
-deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --ignore="tes.ts,app.ts"
+deno run -A https://deno.land/x/denovamon/denovamon.ts start --command="deno run -A app.ts" --ignore="tes.ts,app.ts"
 ```
 Clear Terminal On Restart Command :
 ```
-deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --clear-on-restart
+deno run -A https://deno.land/x/denovamon/denovamon.ts start --command="deno run -A app.ts" --clear-on-restart
 ```
 if you using windows, you must add option "--os=win"
 ```
-deno run -A https://deno.land/x/denovamon/run.ts start --command="deno run -A app.ts" --clear-on-restart --os=win
+deno run -A https://deno.land/x/denovamon/denovamon.ts start --command="deno run -A app.ts" --clear-on-restart --os=win
 ```
 Check version
 ```
-deno run -A https://deno.land/x/denovamon/run.ts version
+deno run -A https://deno.land/x/denovamon/denovamon.ts version
 ```
 ## Programming Use
 ```
